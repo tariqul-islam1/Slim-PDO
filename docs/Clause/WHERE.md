@@ -142,6 +142,10 @@ Parameter | Type | Default | Description
 ### Examples
 
 ```php
+
+// ... WHERE usr = ? AND pw = ?
+$statement->where('usr', '=', 'Tariqul')->where('pw', '=', '123');
+
 // ... WHERE usr = ? OR f_name = ?
 $statement->where('usr', '=', 'FaaPz')->orWhere('f_name', '=', 'Fabian');
 
